@@ -31,7 +31,7 @@ public class Ship
         isAlly = true;
     }
 
-    public Ship(String nameInput, int hullHPInput, int hullACInput, int sailsHPInput, int sailsACInput, int crewInput, int maneuverabilityInput, int damageThresholdInput, boolean isAllyInput)
+    public Ship(String nameInput, int hullHPInput, int hullACInput, int sailsHPInput, int sailsACInput, int crewInput, int damageThresholdInput, boolean isAllyInput)
     {
         name = nameInput;
         hullMaxHP = hullHPInput;
@@ -41,7 +41,6 @@ public class Ship
         sailsHP = sailsMaxHP;
         sailsAC = sailsACInput;
         crew = crewInput;
-        maneuverability = maneuverabilityInput;
         damageThreshold = damageThresholdInput;
         isAlly = isAllyInput;
     }
@@ -343,45 +342,6 @@ public class Ship
             }
         }
 
-        //Get Ship Maneuverability
-        if(!cancelSelected)
-        {
-            customShipLoop = true;
-            boolean invalidInput = false;
-            while(customShipLoop)
-            {
-                System.out.println("Enter the maneuverability for " + name + " or enter 'CANCEL' to exit ship creation");
-                csInput = scanner.nextLine();
-                try
-                {
-                    Integer.parseInt(csInput);
-                }
-                catch(Exception e)
-                {
-                    invalidInput = true;
-                }
-                if(csInput.equalsIgnoreCase("CANCEL"))
-                {
-                    cancelSelected = true;
-                    customShipLoop = false;
-                }
-                else if(invalidInput)
-                {
-                    System.out.println("ERROR: Invalid Input");
-                    invalidInput = false;
-                }
-                else if(Integer.parseInt(csInput) < 0)
-                {
-                    System.out.println("ERROR: Maneuverability cannot be less than 0!");
-                }
-                else
-                {
-                    maneuverability = Integer.parseInt(csInput);
-                    customShipLoop = false;
-                }
-            }
-        }
-
         //Get Ship Crew
         if(!cancelSelected)
         {
@@ -424,6 +384,8 @@ public class Ship
                 }
             }
         }
+
+        //TODO Damage Threshold here
 
         //Get 'faction' of the ship
         if(!cancelSelected)
