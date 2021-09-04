@@ -9,8 +9,6 @@ public class Ship
     public int sailsHP;
     public int sailsAC;
     public int crew;
-    public Crew[] crewArray; //Array to store all Crew objects
-    public int maneuverability;
     public int damageThreshold;
     public String name; //Ship Name
     public boolean isAlly;
@@ -26,12 +24,11 @@ public class Ship
         sailsHP = 10;
         sailsAC = 10;
         crew = 10;
-        maneuverability = 10;
         damageThreshold = 10;
         isAlly = true;
     }
 
-    public Ship(String nameInput, int hullHPInput, int hullACInput, int sailsHPInput, int sailsACInput, int crewInput, int maneuverabilityInput, int damageThresholdInput, boolean isAllyInput)
+    public Ship(String nameInput, int hullHPInput, int hullACInput, int sailsHPInput, int sailsACInput, int crewInput, int damageThresholdInput, boolean isAllyInput)
     {
         name = nameInput;
         hullMaxHP = hullHPInput;
@@ -41,7 +38,6 @@ public class Ship
         sailsHP = sailsMaxHP;
         sailsAC = sailsACInput;
         crew = crewInput;
-        maneuverability = maneuverabilityInput;
         damageThreshold = damageThresholdInput;
         isAlly = isAllyInput;
     }
@@ -343,45 +339,6 @@ public class Ship
             }
         }
 
-        //Get Ship Maneuverability
-        if(!cancelSelected)
-        {
-            customShipLoop = true;
-            boolean invalidInput = false;
-            while(customShipLoop)
-            {
-                System.out.println("Enter the maneuverability for " + name + " or enter 'CANCEL' to exit ship creation");
-                csInput = scanner.nextLine();
-                try
-                {
-                    Integer.parseInt(csInput);
-                }
-                catch(Exception e)
-                {
-                    invalidInput = true;
-                }
-                if(csInput.equalsIgnoreCase("CANCEL"))
-                {
-                    cancelSelected = true;
-                    customShipLoop = false;
-                }
-                else if(invalidInput)
-                {
-                    System.out.println("ERROR: Invalid Input");
-                    invalidInput = false;
-                }
-                else if(Integer.parseInt(csInput) < 0)
-                {
-                    System.out.println("ERROR: Maneuverability cannot be less than 0!");
-                }
-                else
-                {
-                    maneuverability = Integer.parseInt(csInput);
-                    customShipLoop = false;
-                }
-            }
-        }
-
         //Get Ship Crew
         if(!cancelSelected)
         {
@@ -411,7 +368,46 @@ public class Ship
                 }
                 else if(Integer.parseInt(csInput) < 0)
                 {
-                    System.out.println("ERROR: Number of crew cannot be less than 0!");
+                    System.out.println("ERROR: Damage Threshold cannot be less than 0!");
+                }
+                else
+                {
+                    damageThreshold = Integer.parseInt(csInput);
+                    customShipLoop = false;
+                }
+            }
+        }
+
+        //Get Ship Crew
+        if(!cancelSelected)
+        {
+            customShipLoop = true;
+            boolean invalidInput = false;
+            while(customShipLoop)
+            {
+                System.out.println("Enter the damage threshold of " + name + ", or enter 'CANCEL' to exit ship creation");
+                csInput = scanner.nextLine();
+                try
+                {
+                    Integer.parseInt(csInput);
+                }
+                catch(Exception e)
+                {
+                    invalidInput = true;
+                }
+                if(csInput.equalsIgnoreCase("CANCEL"))
+                {
+                    cancelSelected = true;
+                    customShipLoop = false;
+                }
+                else if(invalidInput)
+                {
+                    System.out.println("ERROR: Invalid Input");
+                    invalidInput = false;
+                }
+                else if(Integer.parseInt(csInput) < 0)
+                {
+                    System.out.println("ERROR: Damage Threshold cannot be less than 0!");
                 }
                 else if(Integer.parseInt(csInput) > 9999)
                 {
@@ -419,7 +415,7 @@ public class Ship
                 }
                 else
                 {
-                    crew = Integer.parseInt(csInput);
+                    damageThreshold = Integer.parseInt(csInput);
                     customShipLoop = false;
                 }
             }

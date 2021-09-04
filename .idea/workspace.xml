@@ -6,7 +6,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07446c67-6786-46ee-a08a-859fc322d871" name="Default Changelist" comment="" />
+    <list default="true" id="07446c67-6786-46ee-a08a-859fc322d871" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Attack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DamageDice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Gold_Sea_Naval_Combat_System_jar/Gold Sea Naval Combat System.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Gold_Sea_Naval_Combat_System_jar/Gold Sea Naval Combat System.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gold Sea Naval Combat System/Crew.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gold Sea Naval Combat System/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Gold Sea Naval Combat System/Ship.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gold Sea Naval Combat System/ShipCombat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Gold Sea Naval Combat System/ShipCombat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Crew.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShipCombat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShipCombat.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +33,30 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1nUr2GGwpXM1lCB2AoQkCjnZexH" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Git\Gold-Sea-Naval-Combat-System\src\META-INF" />
+      <recent name="E:\Git\Gold-Sea-Naval-Combat-System\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -65,10 +95,22 @@
       <option name="presentableId" value="Default" />
       <updated>1611455301432</updated>
       <workItem from="1611455307546" duration="227000" />
+      <workItem from="1630780239426" duration="4926000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
